@@ -26,7 +26,7 @@ Free Code Camp 的项目练习。
 
 [预览](https://theaao.github.io/free_code_camp_tasks/randomQuoteMachine/index.html)
 
-[源码](https://github.com/TheaAo/free_code_camp_tasks/randomQuoteMachine/)
+[源码](https://github.com/TheaAo/free_code_camp_tasks/tree/master/randomQuoteMachine)
 
 ### Show the Local Weather
 
@@ -36,7 +36,7 @@ Free Code Camp 的项目练习。
 
 [预览](https://theaao.github.io/free_code_camp_tasks/wikipediaViewer/index.html)
 
-[源码](https://github.com/TheaAo/free_code_camp_tasks/wikipediaViewer)
+[源码](https://github.com/TheaAo/free_code_camp_tasks/tree/master//wikipediaViewer)
 
 ### Twitch.tv
 
@@ -48,7 +48,7 @@ Free Code Camp 的项目练习。
 
 [预览](https://theaao.github.io/free_code_camp_tasks/calculator/index.html)
 
-[源码](https://github.com/TheaAo/free_code_camp_tasks/calculator)
+[源码](https://github.com/TheaAo/free_code_camp_tasks/tree/master/calculator)
 
 ### Pomodoro Clock
 
@@ -56,7 +56,7 @@ Free Code Camp 的项目练习。
 
 [预览](https://theaao.github.io/free_code_camp_tasks/pomodoroClock/index.html)
 
-[源码](https://github.com/TheaAo/free_code_camp_tasks/pomodoroClock)
+[源码](https://github.com/TheaAo/free_code_camp_tasks/tree/master/pomodoroClock)
 
 ### Tic Tac Toe Game
 
