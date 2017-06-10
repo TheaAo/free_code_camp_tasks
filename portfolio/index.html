@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>敖昕妍 | 前端工程师</title>
+        <!--加载 fontawsome CSS库和自己设置的样式-->
+        <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="portfolio.css">
+        <!--加载脚本-->
+        <script src="portfolio.js"></script>
+        <!--加载页面中将使用的中英文字体-->
+        <link href='https://cdn.webfont.youziku.com/webfonts/nomal/98077/46865/58cf818ff629da0dac26409d.css' rel='stylesheet'/>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Cutive+Mono" rel="stylesheet">     
+    </head>
+    <body>
+      <header>
+        <nav>
+          <ul>
+            <li class="floatli"><a href="#homepage" target="_top">主页</a></li>
+            <li class="floatli"><a href="#skillstack" target="_top">技术栈</a></li>
+            <li class="floatli"><a href="#projects" target="_top">作品</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section id="homepage">
+        <img src="avatar.jpg">
+        <h1>敖昕妍</h1>
+        <h2>初级前端工程师</h2>
+        <a href="https://github.com/TheaAo" target="_blank"><span class="fa fa-2x fa-github"></span></a>
+        <a href="mailto:ao_xinyan@163.com"><span class="fa fa-2x fa-envelope"></span></a>
+        <br>
+        <a href="#skillstack" target="_top"><span class="fa fa-2x fa-arrow-circle-down"></span></a>
+      </section>
+      <section id="skillstack">
+        <section>
+          <h3>关于我</h3>
+          <p class="para">我是一名初级前端开发者, 2015 年毕业于北京邮电大学。此前在其他行业工作，因此无相关工作经验。现在希望找到一份前端开发的实习或全职工作。这是我的个人作品集，希望能让您对我的能力有一定了解。</p>
+        </section>
+        <section>
+          <h3>
+            技术栈
+          </h3>
+          <ul class="skillIntro">
+            <li class="heading4"><span class="fa fa-tag"></span> HTML&amp;CSS
+              <ul class="para">
+                <li>实现网站常见布局，如三栏固定布局、三栏弹性布局、瀑布流布局等</li>
+                <li>能够根据 PSD 完成重构</li>
+                <li>能够使用 HTML5+CSS3 进行 web 开发</li>
+                <li>了解 w3c 标准，代码规范</li>
+              </ul>
+            </li>
+            <li class="heading4"><span class="fa fa-tag"></span> JavaScript
+              <ul class="para">
+                <li>熟悉原生 JavaScript, 能够实现 HTML 页面的 DOM 操作及 AJAX 请求</li>
+                <li>熟悉 jQuery 框架，能够使用 Bootstrap 实现响应式设计</li>
+                <li>对跨浏览器兼容性问题有一定了解</li>
+              </ul>
+            </li>
+            <li class="heading4"><span class="fa fa-tag"></span> 其他
+              <ul class="para">
+                <li>使用 Git 进行版本控制</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section id="projects">
+        <h3>作&nbsp;&nbsp;品</h3>
+        <div class="project">
+          <img src="images/snake.jpg" alt="贪吃蛇游戏">
+          <article>
+            <h4 class="heading4">Snake</h4>
+            <p class="keyword">HTML5-CSS3</p class="keyword">
+            <p class="para">一个简单的贪吃蛇小游戏。可以通过方向键控制贪吃蛇的行动，通过空格键暂停和继续游戏。并且随着分数的增加，贪吃蛇的速度也将增加。</p>
+            <p class="para">利用 HTML5 的新标签 canvas 实现。</p>
+            <div class="option">
+              <a href="https://theaao.github.io/Snake/" target="_blank"><button>Look</button></a>
+              <a href="https://github.com/theaao/Snake/" target="_blank"><button>Code</button></a>
+            </div>
+          </article>
+        </div>
+        <div class="project">
+          <img src="./images/WikiViewer.jpg" alt="维基百科阅读器">
+          <article>
+            <h4 class="heading4">Wikipedia Viewer</h4>
+            <p class="keyword">JavaScript-AJAX-JSON</p class="keyword">
+            <p class="para">使用维基百科接口获取数据，并显示最近 10 条。支持中英文切换和搜索</p>
+            <p class="para">难点有二：其一，维基百科的接口文档为英文，读来颇费工夫；其二，对于 AJAX 和 JSON 的理解。</p>
+            <div class="option">
+              <a href="https://theaao.github.io/WikiViewer/index.html" target="_blank"><button>Look</button></a>
+              <a href="https://github.com/theaao/WikiViewer/" target="_blank"><button>Code</button></a>
+            </div>
+          </article>
+        </div>
+      </section>
+      <footer>
+        <a href="https://github.com/TheaAo" target="_blank"><span class="fa fa-2x fa-github"></span></a>
+        <a href="mailto:ao_xinyan@163.com"><span class="fa fa-2x fa-envelope"></span></a>
+        <p>More information in <a href="#">Thea Ao</a></p>
+      </footer>
+    </body>
+</html>

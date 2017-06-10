@@ -1,0 +1,233 @@
+/*
+* @Author: Administrator
+* @Date:   2017-03-18 12:11:22
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-03-22 09:42:05
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+@media screen {
+  html,body {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: "Open Sans", Source-Han-Ligh98fbb619d17f1d, "Microsoft Yahei", "微软雅黑", sans-serif;
+    line-height: 1;
+  }
+  h1 {
+    font: normal 400 2.4rem/1.5 "Open Sans", Source-Han-Ligh98fbb619d17f1d, "Microsoft Yahei", "微软雅黑", sans-serif;
+    letter-spacing: .2rem;
+    margin: 2.4rem auto 1.2rem;
+  }
+  h2 {
+    font: normal 400 1.5rem/1 "Open Sans", Source-Han-Ligh98fbb619d17f1d, "Microsoft Yahei", "微软雅黑", sans-serif;
+    letter-spacing: .2rem;
+    margin: 1.5rem auto 1rem;
+  }
+  h3 {
+    text-align: center;
+    font: normal 500 1.2rem/1 "Open Sans", Source-Han-Ligh98fbb619d17f1d, "Microsoft Yahei", "微软雅黑", sans-serif;
+    letter-spacing: .2rem;
+    margin-bottom: .6rem;
+  }
+  a:link {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  a:visited {
+    color: #ffffff;
+  }
+  a:hover {
+    color: #555555;
+  }
+  .para {
+    font: normal 200 .8rem/1.2 "Open Sans", Source-Han-Ligh98fbb619d17f1d, "Microsoft Yahei", "微软雅黑", sans-serif;
+    text-align: left;
+    margin: .5rem 0;
+  }
+  .heading4 {
+    text-align: left;
+    font: normal 500 1.1rem/1 "Open Sans", Source-Han-Ligh98fbb619d17f1d, "Microsoft Yahei", "微软雅黑", sans-serif;
+    margin: .5rem 0 .25rem;
+  }
+  .keyword {
+    text-align: left;
+    font: normal normal .9rem/1 "Cutive Mono", Source-Han-Ligh98fbb619d17f1d, "Microsoft Yahei", "微软雅黑", sans-serif;
+    margin: .5rem 0 .25rem;
+  }
+  .floatli {
+    list-style-type: none;
+    float: left;
+  }
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 2rem;
+    background-color: #599a96;
+    z-index: 999;
+  }
+  nav {
+    text-align: center;
+    font-size: 1rem;
+    padding-top: .3rem;
+  }
+  nav ul {
+    display: inline-block;
+  }
+  nav a {
+    display: block;
+    margin: .2rem;
+    letter-spacing: .1rem;
+    color: #ffffff;
+  }
+  section {
+    padding: 5% .5rem 5%;
+    background-color: #eeeeee;
+  }
+  section#homepage {
+    height: 100vh;
+    background-color: #de7b54;
+    padding-top: 10%;
+    text-align: center;
+    color: #ffffff;
+  }
+  #homepage img {
+    border-radius: 50%;
+    width: 15%;
+  }
+  #homepage .fa {
+    margin: 0 .5rem 1rem;
+  }
+  section#skillstack {
+    padding-top: 5%;
+  }
+  #skillstack section {
+    margin: 0 auto 1rem;
+    padding: 1rem .5rem;
+    border-radius: .25rem; 
+  }
+  #skillstack .skillIntro *{
+    list-style-type: none;
+  }
+  section#projects .project {
+    margin: 1rem auto 0;
+    padding: 1rem 1rem;
+    background-color: #ffffff;
+    border-radius: .25rem;    
+  }
+  #projects .project img {
+    max-width: 100%;
+  }
+  .project .option {
+    text-align: center;
+  }
+  .project button {
+    width: 5rem;
+    height: 1.5rem;
+    border: 1px solid #aaaaaa;
+    border-radius: .2rem;
+    background-color: #eeeeee;
+    font: normal 400 .8rem/1.2 "Open Sans", Source-Han-Ligh98fbb619d17f1d, "Microsoft Yahei", "微软雅黑", sans-serif;
+    letter-spacing: .1rem;
+    margin: .25rem .25rem 1rem;
+  }
+  footer {
+    background-color: #de7b54;
+    text-align: center;
+    padding: 1rem;
+    color: #ffffff;
+  }
+  footer a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  footer .fa {
+    margin: 0 .5rem 1rem;
+  }
+  footer p {
+    font: normal 400 .5rem/1.2 "Open Sans", Source-Han-Ligh98fbb619d17f1d, "Microsoft Yahei", "微软雅黑", sans-serif;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  section#skillstack section {
+    width: 50%;
+    margin: auto;
+  }
+  #skillstack .skillIntro ul {
+    list-style-type: none;
+    padding: 0 1.2rem;
+  }
+  #skillstack .skillIntro>li {
+    padding: 0 1rem 1rem;
+  }
+  section#projects .project{
+    width: 50%;
+    position: relative;
+  }
+  .project article {
+    display: none;
+  }
+  .project:hover {
+    cursor: pointer;
+  }
+  .project:hover article {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1.5rem 2rem;
+    background-color: #599a96;
+    opacity: 0.9;
+    color: #ffffff;
+    border-radius: .25rem; 
+    overflow: auto;
+  }
+  .project:hover article * {
+    opacity: 1.2;
+  }
+}
+@media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box;
+  }
+  section#homepage {
+    padding: 30% 0 5%;
+  }
+  #homepage img {
+    width: 25%;
+  }
+  section#skillstack {
+    padding-top: 10%;
+  }
+  #skillstack section{
+    width: 95%;
+  }
+  .skillIntro li ul {
+    padding: 0 1rem;
+  }
+  section#projects {
+    padding-top: 15%;
+  }
+  #projects .project {
+    width: 90%;
+  }
+  .para {
+    margin: 1rem 0;
+  }
+}
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  section#homepage {
+    padding-top: 5%; 
+  }
+  section#homepage img {
+    display: none;
+  }
+}
