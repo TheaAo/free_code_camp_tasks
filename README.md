@@ -10,7 +10,7 @@ Free Code Camp 的项目练习。
 
 ### Personal Portfolio
 
-[查看](https://theaao.github.io/free_code_camp_tasks/portfolio)
+[查看](https://theaao.github.io/free_code_camp_tasks/portfolio/index.html)
 
 ### Danmu App
 
@@ -24,9 +24,9 @@ Free Code Camp 的项目练习。
 
 随机显示诗词。
 
-[预览](https://theaao.github.io/free_code_camp_tasks/randomQuoteMachine)
+[预览](https://theaao.github.io/free_code_camp_tasks/randomQuoteMachine/index.html)
 
-[源码](https://github.com/TheaAo/free_code_camp_tasks/randomQuoteMachine)
+[源码](https://github.com/TheaAo/free_code_camp_tasks/randomQuoteMachine/)
 
 ### Show the Local Weather
 
@@ -34,7 +34,7 @@ Free Code Camp 的项目练习。
 
 维基百科词条查看器。
 
-[预览](https://theaao.github.io/free_code_camp_tasks/wikipediaViewer)
+[预览](https://theaao.github.io/free_code_camp_tasks/wikipediaViewer/index.html)
 
 [源码](https://github.com/TheaAo/free_code_camp_tasks/wikipediaViewer)
 
@@ -46,7 +46,7 @@ Free Code Camp 的项目练习。
 
 计算器。
 
-[预览](https://theaao.github.io/free_code_camp_tasks/calculator)
+[预览](https://theaao.github.io/free_code_camp_tasks/calculator/index.html)
 
 [源码](https://github.com/TheaAo/free_code_camp_tasks/calculator)
 
@@ -54,7 +54,7 @@ Free Code Camp 的项目练习。
 
 一个简易番茄钟。
 
-[预览](https://theaao.github.io/free_code_camp_tasks/pomodoroClock)
+[预览](https://theaao.github.io/free_code_camp_tasks/pomodoroClock/index.html)
 
 [源码](https://github.com/TheaAo/free_code_camp_tasks/pomodoroClock)
 
