@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="pomodoroClock.css">
+        <link href="https://fonts.googleapis.com/css?family=Damion|Nunito" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Focus On Your Work</h1>
+            <div class="settings">
+                <div class="setting" id="break">
+                    <h2>BREAK LENGTH</h2>
+                    <button class="minus">-</button>
+                    <span>5</span>
+                    <button class="plus">+</button>
+                </div>
+                <div class="setting" id="session">
+                    <h2>SESSION LENGTH</h2>
+                    <button class="minus">-</button>
+                    <span>1</span>
+                    <button class="plus">+</button>
+                </div>
+            </div>
+            <div class="timer">
+                <h2>Session</h2>
+                <span>1</span>
+                <div class="animation"></div>
+            </div>
+        </div>
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+        <script src="pomodoroClock.js"></script>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+/*
+* @Author: Administrator
+* @Date:   2017-04-09 10:22:03
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-04-09 11:50:00
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    font-size: 10px;
+    font-family: 'Open sans', sans-serif;
+    background: #96c4e6;
+}
+.container {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;    
+    width: 300px;
+    height: 400px;
+    background-color: #F7BB82;
+    border-radius: 10px;
+    text-align: center;
+}
+h1 {
+    font-family: 'Niconne', cursive;
+    font-size: 2rem; 
+    margin: 1rem 0 .5rem 0;
+    color: #3A7DAF;
+}
+.screen {
+    width: 260px;
+    height: 50px;
+    background-color: #eeeeee;
+    margin: 0 auto 1rem auto;
+    padding: 0 .5rem;
+    font: 2.5rem/2 'Open Sans', sans-serif;
+    text-align: right;
+    vertical-align: baseline;
+    background-color: #FFF3C0;
+    color: #555555;
+}
+#function_area {
+    width: 265px;
+    height: 300px;
+    margin: auto;
+}
+button {
+    display: inline-block;
+    width: 60px;
+    height: 50px;
+    background-color: #FFF3C0;
+    color: #F7BB82;
+    margin: .2rem .1rem;
+    border-style: none;
+    font-size: 1.6rem;
+}
+button#No_0 {
+    width: 125px;
+}
