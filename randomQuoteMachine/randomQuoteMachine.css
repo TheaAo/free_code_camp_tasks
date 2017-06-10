@@ -1,0 +1,72 @@
+/*
+* @Author: Thea Ao
+* @Date:   2017-03-09 16:24:02
+* @Last Modified by:   Thea Ao
+* @Last Modified time: 2017-06-10 12:21:54
+*/
+* {
+  box-sizing: border-box;
+  transition: all 1000ms;
+}
+body{
+  margin: 0;
+  background-color: black;
+}
+footer {
+  margin: 20px auto;
+  text-align: center;
+  color: white;
+}
+.container {
+  width: 90%;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+.content {
+  margin: 10px 0;
+  text-align: right;
+}
+.content p{
+  text-align: left;
+}
+.panel .fa{
+  background-color: black;
+  color: white;
+  padding: 5px;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+.panel button{
+  float: right;
+  height: 42px;
+  width: 100px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  border: none;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 60%;
+  }
+}
+@media (min-width: 993px) {
+  .container {
+    width: 40%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 30%;
+  }
+}
