@@ -1,0 +1,89 @@
+/*
+* @Author: Administrator
+* @Date:   2017-02-21 16:52:35
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-02-25 17:47:49
+*/
+* {
+  box-sizing: border-box;
+}
+@media screen {
+  html,body {
+    background-color: #495A80;
+    min-width: 100%;
+    min-height: 100%;
+    text-transform: capitalize;
+  }
+
+  .container {
+    max-width: 800px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+  h1 {
+    color: #E08031;
+    font-weight: bolder;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+  }
+  h1 small {
+    font-size: 16px;
+    font-weight: normal;
+  }
+  input {
+    border-radius: 1rem;
+  }
+  input[type="text"] {
+    width: 60%;
+    font-size: 1.2rem;
+    height: 2.4rem;
+    padding: 0.6rem 0.6rem;
+    border: solid 1px #E08031;
+    margin-bottom: 2rem;
+  }
+  input[type="button"] {
+    border: solid 1px #E08031;
+    background-color: #495A80;
+    height: 2rem;
+    width: 10rem;
+    margin:5px;
+    color: #E08031;
+    font-size: 1rem;
+  }
+  input[type="button"]:hover {
+    background-color: #093844;
+  }
+  .lang {
+    color: #E08031;
+    margin-bottom: 1rem;
+  }
+  .lang span {
+    margin: 0 4px;
+  }
+  .lang span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+  .item div {
+    max-width: 1000px;
+    padding: 1rem;
+    margin-top: 5px;
+    background-color: #E5ECFC;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+  }
+  .item div:hover {
+    border-left: solid 5px #E08031;
+  }
+}

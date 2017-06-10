@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="wikipedia_viewer.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1><span>Wiki</span>pedia<small>维基百科</small></h1>
+      <form name="search_box" onsubmit="return false">
+          <input type="text" name="keywords" autofocus required><br>
+          <input type="button" name="submit_btn" value="Wiki 搜索" onclick="wikiSearch()">
+          <input type="button" name="random_btn" value="手气不错" onclick="wikiRandom()">
+      </form>
+      <br>
+      <div class="lang">
+        <span onclick="language('zh')">中文</span>
+        <span onclick="language('en')">English</span>
+      </div>
+    </div>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="wikipedia_viewer.js"></script>
+  </body>
+</html>
