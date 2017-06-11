@@ -1,0 +1,46 @@
+/*
+* @Author: Thea Ao
+* @Date:   2017-06-11 03:25:27
+* @Last Modified by:   Thea Ao
+* @Last Modified time: 2017-06-11 16:15:02
+*/
+* {
+    transition: display 500ms;
+}
+div#wall {
+    width: 90%;
+    height: 80vh;
+    margin: auto;
+    border: solid 1px #888;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 5px 0;
+    position: relative;
+}
+div#panel {
+    text-align: center;
+}
+input[type=text] {
+    width: 350px;
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+button {
+    width: 100px;
+    height: 30px;
+    border: solid 1px;
+    background-color: transparent;
+    margin: 10px;
+}
+button#shoot{
+    color: orange;
+}
+button#clear {
+    color: #888;
+}
+@media (max-width: 768px){
+    input[type=text], button{
+        width: 80%;
+    }
+}
