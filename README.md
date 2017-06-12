@@ -14,9 +14,9 @@ Free Code Camp 的项目练习。
 
 ### Danmu App
 
-查看
+[试玩](https://theaao.github.io/free_code_camp_tasks/danmu/index.html)
 
-代码
+[源码](https://github.com/TheaAo/free_code_camp_tasks/tree/master/danmu)
 
 ## Intermediate Front End Development Projects
 
@@ -29,6 +29,10 @@ Free Code Camp 的项目练习。
 [源码](https://github.com/TheaAo/free_code_camp_tasks/tree/master/randomQuoteMachine)
 
 ### Show the Local Weather
+
+预览
+
+源码
 
 ### Wikipedia Viewer
 

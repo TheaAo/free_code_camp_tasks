@@ -1,0 +1,60 @@
+@charset "UTF-8";
+/*
+* @Author: Thea Ao
+* @Date:   2017-06-12 13:55:45
+* @Last Modified by:   Thea Ao
+* @Last Modified time: 2017-06-12 18:09:19
+*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", "Microsoft Yahei", "微软雅黑", Sans-serif;
+}
+
+ul {
+  list-style: none outside;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:hover, a:active, a:visited {
+  color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  line-height: 1;
+  letter-spacing: 4px;
+}
+
+h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+/*# sourceMappingURL=reset.css.map */

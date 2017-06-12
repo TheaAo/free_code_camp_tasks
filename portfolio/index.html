@@ -2,102 +2,185 @@
 <html lang="zh-cn">
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>敖昕妍 | 前端工程师</title>
+        <meta name="viewport" content="width=device-width">
+        <title>前端简历|敖昕妍</title>
         <!--加载 fontawsome CSS库和自己设置的样式-->
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="portfolio.css">
-        <!--加载脚本-->
-        <script src="portfolio.js"></script>
-        <!--加载页面中将使用的中英文字体-->
-        <link href='https://cdn.webfont.youziku.com/webfonts/nomal/98077/46865/58cf818ff629da0dac26409d.css' rel='stylesheet'/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans|Cutive+Mono" rel="stylesheet">     
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" href="css/portfolio.css">     
     </head>
     <body>
       <header>
         <nav>
           <ul>
-            <li class="floatli"><a href="#homepage" target="_top">主页</a></li>
-            <li class="floatli"><a href="#skillstack" target="_top">技术栈</a></li>
-            <li class="floatli"><a href="#projects" target="_top">作品</a></li>
+            <li>主页</li>
+            <li>关于我</li>
+            <li>技术栈</li>
+            <li>作品</li>
           </ul>
         </nav>
       </header>
-      <section id="homepage">
-        <img src="avatar.jpg">
-        <h1>敖昕妍</h1>
-        <h2>初级前端工程师</h2>
-        <a href="https://github.com/TheaAo" target="_blank"><span class="fa fa-2x fa-github"></span></a>
-        <a href="mailto:ao_xinyan@163.com"><span class="fa fa-2x fa-envelope"></span></a>
-        <br>
-        <a href="#skillstack" target="_top"><span class="fa fa-2x fa-arrow-circle-down"></span></a>
-      </section>
-      <section id="skillstack">
-        <section>
-          <h3>关于我</h3>
-          <p class="para">我是一名初级前端开发者, 2015 年毕业于北京邮电大学。此前在其他行业工作，因此无相关工作经验。现在希望找到一份前端开发的实习或全职工作。这是我的个人作品集，希望能让您对我的能力有一定了解。</p>
+      <main>
+        <section id="homepage">
+          <div class="container">
+            <a href="https://theaao.github.io"><img srcset="images/avatar_100px.jpg 100w, images/avatar_200px.jpg 200w" sizes="(min-width: 768px) 200px, 100px" src="images/avatar_100px.jpg" alt="头像" id="avatar"></a>
+            <h1>敖昕妍</h1>
+            <h2>初级前端工程师</h2>
+            <ul class="floatfix">
+              <li class="float">
+                <a href="https://github.com/TheaAo" target="_blank"><span class="fa fa-3x fa-github fa-fw"></span></a>
+              </li>
+              <li class="float">
+                <a href="mailto:ao_xinyan@163.com"><span class="fa fa-3x fa-envelope fa-fw"></span></a>
+              </li>
+            </ul>
+          </div>
+          <div class="nextpage">
+            <span class="fa fa-2x fa-angle-down"></span>
+          </div>
         </section>
-        <section>
-          <h3>
-            技术栈
-          </h3>
-          <ul class="skillIntro">
-            <li class="heading4"><span class="fa fa-tag"></span> HTML&amp;CSS
-              <ul class="para">
-                <li>实现网站常见布局，如三栏固定布局、三栏弹性布局、瀑布流布局等</li>
-                <li>能够根据 PSD 完成重构</li>
-                <li>能够使用 HTML5+CSS3 进行 web 开发</li>
-                <li>了解 w3c 标准，代码规范</li>
+        <section id="about-me">          
+          <h2>关于我</h2>
+          <div class="card floatfix">
+            <div class="left float">
+              <h4>基本信息</h4>
+              <ul class="content">
+                <li>年&nbsp;&nbsp;龄&nbsp;&nbsp;23</li>
+                <li>学&nbsp;&nbsp;历&nbsp;&nbsp;本科</li>
+                <li>学&nbsp;&nbsp;校&nbsp;&nbsp;北京邮电大学</li>
               </ul>
-            </li>
-            <li class="heading4"><span class="fa fa-tag"></span> JavaScript
-              <ul class="para">
-                <li>熟悉原生 JavaScript, 能够实现 HTML 页面的 DOM 操作及 AJAX 请求</li>
-                <li>熟悉 jQuery 框架，能够使用 Bootstrap 实现响应式设计</li>
-                <li>对跨浏览器兼容性问题有一定了解</li>
-              </ul>
-            </li>
-            <li class="heading4"><span class="fa fa-tag"></span> 其他
-              <ul class="para">
-                <li>使用 Git 进行版本控制</li>
-              </ul>
-            </li>
-          </ul>
+            </div>
+            <div class="right float">
+              <h4>自我评价</h4>
+              <p class="content">好文肯问，性格随和，充满好奇心。</p>
+            </div>
+          </div>
+          <div class="nextpage">
+            <span class="fa fa-2x fa-angle-down"></span>
+          </div>          
         </section>
-      </section>
-      <section id="projects">
-        <h3>作&nbsp;&nbsp;品</h3>
-        <div class="project">
-          <img src="images/snake.jpg" alt="贪吃蛇游戏">
-          <article>
-            <h4 class="heading4">Snake</h4>
-            <p class="keyword">HTML5-CSS3</p class="keyword">
-            <p class="para">一个简单的贪吃蛇小游戏。可以通过方向键控制贪吃蛇的行动，通过空格键暂停和继续游戏。并且随着分数的增加，贪吃蛇的速度也将增加。</p>
-            <p class="para">利用 HTML5 的新标签 canvas 实现。</p>
-            <div class="option">
-              <a href="https://theaao.github.io/Snake/" target="_blank"><button>Look</button></a>
-              <a href="https://github.com/theaao/Snake/" target="_blank"><button>Code</button></a>
+        <section id="skills">
+          <div>
+            <h2>技术栈</h2>
+            <div>
+              <div class="floatfix card">
+                <h4 class="heading">HTML&CSS</h4>
+                <ul class="content">
+                  <li><div class="fa fa-caret-right floatfix"></div>熟练掌握HTML 标签，能够编写语义合理、结构化的页面文档</li>
+                  <li><div class="fa fa-caret-right floatfix"></div>理解 CSS 盒模型，熟知各种定位方式，能够准确完成从 psd 设计稿到网站页面的重构，实现多样化的网站布局</li>
+                  <li><div class="fa fa-caret-right floatfix"></div>能够利用CSS3实现多种动画效果</li>
+                  <li><div class="fa fa-caret-right floatfix"></div>能够利用Sass编写CSS</li>
+                </ul>
+              </div>
+              <div class="floatfix card">
+                <h4 class="heading">JavaScript</h4>
+                <ul class="content">
+                  <li><div class="fa fa-caret-right floatfix"></div>熟悉原生 JavaScript，能够使用原生 JS 进行DOM操作，发送Ajax请求等</li>
+                  <li><div class="fa fa-caret-right floatfix"></div>能熟练使用jQuery配合js进行网站开发</li>
+                  <li></li>
+                </ul>
+              </div>
+              <div class="floatfix card">
+                <h4 class="heading">其他</h4>
+                <ul class="content">
+                  <li><div class="fa fa-caret-right floatfix"></div>良好的英文能力，能够阅读英文文档，紧跟技术发展潮流</li>
+                  <li><div class="fa fa-caret-right floatfix"></div>使用 Git 进行版本控制</li>
+                </ul>
+              </div>
+            </div>              
+            <div class="nextpage">
+            <span class="fa fa-2x fa-angle-down"></span>
+          </div>
+          </div>
+        </section>
+        <section id="projects">
+          <div>
+            <h2>作&nbsp;&nbsp;&nbsp;&nbsp;品</h2>
+            <div>
+              <div class="project floatfix">
+                <img src="images/random_quote_machine.jpg" alt="随机诗词生成器截图" class="preview">
+                <div class="intro">
+                  <h3>随机诗词显示器</h3>
+                  <p>每次打开页面时随机显示一首词，支持分享到facebook、twitter 和微博，诗词切换时动画效果显示。</p>
+                  <div class="tags">
+                    <div class="float tag">jQuery</div>
+                    <div class="float tag">ajax</div>
+                    <div class="float tag">CSS3</div>
+                  </div>
+                </div>
+                <div class="panel"><a href="https://theaao.github.io/free_code_camp_tasks/randomQuoteMachine/index.html">预览</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/TheaAo/free_code_camp_tasks/tree/master/randomQuoteMachine">源码</a></div>
+              </div>
+              <div class="project floatfix">
+                <img src="images/wiki_viewer.jpg" alt="维基词条阅读器截图" class="preview">
+                <div class="intro">
+                  <h3>维基词条阅读器</h3>
+                  <p>输入关键词得到10条包含关键词的维基词条，或者点击按钮随机打开一条词条。支持中英文维基切换查询。</p>
+                  <div class="tags">
+                    <div class="float tag">ajax</div>
+                    <div class="float tag">json</div>
+                    <div class="float tag">DOM</div>
+                  </div>
+                </div>
+                <div class="panel"><a href="https://theaao.github.io/free_code_camp_tasks/wikipediaViewer/index.html">预览</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/TheaAo/free_code_camp_tasks/tree/master/wikipediaViewer">源码</a></div>
+              </div>
+              <div class="project floatfix">
+                <img src="images/snake.jpg" alt="贪食蛇页面截图" class="preview">
+                <div class="intro">
+                  <h3>贪食蛇</h3>
+                  <p>一个贪食蛇小游戏，利用HTML5的canvas标签实现。通过键盘控制蛇向四个方向移动，可以暂停游戏。随着分数的增加，蛇运动速度将加快。</p>
+                  <div class="tags">
+                    <div class="float tag">HTML5</div>
+                    <div class="float tag">JavaScript</div>
+                  </div>
+                </div>
+                <div class="panel"><a href="https://theaao.github.io/Snake/index.html">预览</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/TheaAo/Snake/tree/master">源码</a></div>
+              </div>
+              <div class="project floatfix">
+                <img src="images/page_switch.jpg" alt="页面切换插件截图" class="preview">
+                <div class="intro">
+                  <h3>页面切换插件</h3>
+                  <p>可以实现页面的平滑切换，可以设置页面切换的方向、是否分页、是否循环切换等。略修改也可实现轮播效果。</p>
+                  <div class="tags">
+                    <div class="float tag">jQuery</div>
+                    <div class="float tag">JavaScript</div>
+                  </div>
+                </div>
+                <div class="panel"><a href="https://theaao.github.io/plugins/page_switch_demo/demo.html">预览</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/TheaAo/plugins/tree/master/page_switch_demo">源码</a></div>
+              </div>
+              <div class="project floatfix">
+                <img src="images/baidu_ife.jpg" alt="百度前端学院页面截图" class="preview">
+                <div class="intro">
+                  <h3>百度前端学院</h3>
+                  <p>独立完成百度前端学院基础课程的任务。</p>
+                  <div class="tags">
+                    <div class="float tag">HTML</div>
+                    <div class="float tag">CSS</div>
+                    <div class="float tag">JavaScript</div>
+                  </div>
+                </div>
+                <div class="panel"><a href="http://ife.baidu.com/">IFE学院</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/TheaAo/baidu_ife_tasks">我的任务</a></div>
+              </div>
+              <div class="project floatfix">
+                <img src="images/danmu.jpg" alt="弹幕墙截图" class="preview">
+                <div class="intro">
+                  <h3>弹幕墙</h3>
+                  <p>可以发射和清除弹幕，弹幕位置和颜色随机。</p>
+                  <div class="tags">
+                    <div class="float tag">jQuery</div>
+                  </div>
+                </div>
+                <div class="panel"><a href="https://theaao.github.io/free_code_camp_tasks/danmu/index.html">预览</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/TheaAo/free_code_camp_tasks/tree/master/danmu">源码</a></div>
+              </div>
             </div>
-          </article>
-        </div>
-        <div class="project">
-          <img src="./images/WikiViewer.jpg" alt="维基百科阅读器">
-          <article>
-            <h4 class="heading4">Wikipedia Viewer</h4>
-            <p class="keyword">JavaScript-AJAX-JSON</p class="keyword">
-            <p class="para">使用维基百科接口获取数据，并显示最近 10 条。支持中英文切换和搜索</p>
-            <p class="para">难点有二：其一，维基百科的接口文档为英文，读来颇费工夫；其二，对于 AJAX 和 JSON 的理解。</p>
-            <div class="option">
-              <a href="https://theaao.github.io/WikiViewer/index.html" target="_blank"><button>Look</button></a>
-              <a href="https://github.com/theaao/WikiViewer/" target="_blank"><button>Code</button></a>
-            </div>
-          </article>
-        </div>
-      </section>
+          </div>
+        </section>
+      </main>
       <footer>
         <a href="https://github.com/TheaAo" target="_blank"><span class="fa fa-2x fa-github"></span></a>
         <a href="mailto:ao_xinyan@163.com"><span class="fa fa-2x fa-envelope"></span></a>
         <p>More information in <a href="#">Thea Ao</a></p>
-      </footer>
+      </footer>   
+      <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+      <script src="portfolio.js"></script>
     </body>
 </html>

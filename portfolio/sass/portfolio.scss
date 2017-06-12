@@ -1,0 +1,248 @@
+/*
+* @Author: Thea Ao
+* @Date:   2017-06-12 11:55:59
+* @Last Modified by:   Thea Ao
+* @Last Modified time: 2017-06-12 22:02:01
+*/
+@import 'reset';
+
+
+@mixin center($x:-50%, $y:-50%) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate($x, $y);
+}
+@mixin block($width:100%, $height:100%){
+    width: $width;
+    height: $height; 
+}
+
+$fontStack: "Open Sans", "Microsoft Yahei", "微软雅黑", Sans-serif;
+$homepageBg: #de7b54;
+$headerBg: #599a96;
+$mainBg: #eeeeee;
+$fontColor1: #fff;
+$fontColor2: #333;
+
+/*通用的类*/
+body {
+    .float {
+        float: left;
+    }
+    .floatfix {
+        display: inline-block;
+    }
+    .center {
+    }
+    .card {
+        width: 300px;
+        margin: 20px;
+        background-color: $homepageBg;
+        color: $fontColor1;
+
+        .heading {
+            background-color: $headerBg;
+            margin: 0;
+            height: 30px;
+            padding: 5px 20px;
+        }
+
+        .content {
+            margin: 20px;
+            text-align: left;
+        }
+    }
+}
+
+/*header 样式*/
+header {
+    background-color: $headerBg;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    
+    nav {  
+        @include block(100vw, 40px); 
+        color: $fontColor1;
+        text-align: center;
+        position: relative;
+        ul {
+            display: inline-block;
+            margin-top: 5px;
+        }
+        li {
+            padding: 5px;
+            margin: 0 5px;
+            float: left;
+        }
+        li:hover {
+            color: $fontColor2;
+            cursor: pointer;
+        }
+    }
+}
+
+/*各个section样式*/
+main {
+    background-color: $mainBg;
+    margin-top: 40px;
+
+    section {
+        position: relative;
+        text-align: center;
+        padding: 20px;
+    }
+
+    section#homepage {
+        background-color: $homepageBg;
+        color: $fontColor1;
+        height: calc(100vh - 40px);
+        
+        div.container {
+            @include center;
+            transform: translate(-50%,-60%);
+        }
+
+        img#avatar {
+            border-radius: 50%;
+        }
+
+        h1 {
+            margin-bottom: -10px;
+        }
+    }
+    
+    section#about-me {
+
+        .card {
+            width: 60%;
+            background-color: transparent;
+
+            div {
+                padding: 20px;
+                position: relative;
+            }
+
+            .left {
+                background-color: $homepageBg;
+            }
+            .right {
+                background-color: $headerBg; 
+            }
+            .center {
+                text-align: left;
+            }
+        }
+    }
+
+    section#skills {
+        
+        .content {
+            li {
+                margin: 10px 0;
+            }
+            .fa {
+                margin: 0 5px;
+            }
+        }
+    }
+
+    section#projects {
+        padding: 20px;
+
+        .project {
+            position: relative;
+            margin: 20px 20px 10px;
+            
+            .preview {
+                @include block(300px,300px);
+            }
+
+            .intro {
+                position: absolute;
+                top: 0;
+                @include block(300px,300px);
+                background-color: rgba(89,154,150,0.9);
+                color: $fontColor1;
+                padding: 20px;
+                display: none;
+
+                p {
+                    text-align: left;
+                }
+
+                .tag {
+                    margin-right: 10px;
+                    padding: 5px 10px;
+                    border-radius: 5px;
+                    background-color: $homepageBg;
+                    opacity: 0.9;
+                }
+            }
+
+            .panel {
+                a {
+                    color: $headerBg;
+                }
+                
+            }
+        }
+        .project:hover {
+            .intro {
+                display: block;
+            }
+        }
+    }
+
+    div.nextpage {
+        position:absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: fontColor1;
+    }
+}
+
+/*footer 样式*/
+footer {
+    background-color: $homepageBg;
+    text-align: center;
+    color: $fontColor1;
+    padding: 20px 0;
+}
+
+/*响应式*/
+@media (min-width: 768px) {
+    .card {
+        height: 300px;
+    }
+    section#about-me, section#skills {
+        height: calc(100vh - 40px);
+    }
+
+    section#about-me {
+        .card {
+            @include center;
+
+            div {
+                width: 50%;
+                height: 100%;;
+            }
+            .content {
+                @include center(-80%);
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    section#about-me {
+        .card {
+            div {
+                width: 100%;
+            }
+        }
+    }
+}
