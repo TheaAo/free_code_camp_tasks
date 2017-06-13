@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="css/portfolio.css">     
+        <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
+        <script src="portfolio.js"></script>
     </head>
     <body>
       <header>
@@ -43,16 +45,17 @@
           <h2>关于我</h2>
           <div class="card floatfix">
             <div class="left float">
-              <h4>基本信息</h4>
+              <h4 class="heading">基本信息</h4>
               <ul class="content">
                 <li>年&nbsp;&nbsp;龄&nbsp;&nbsp;23</li>
                 <li>学&nbsp;&nbsp;历&nbsp;&nbsp;本科</li>
                 <li>学&nbsp;&nbsp;校&nbsp;&nbsp;北京邮电大学</li>
+                <li>专&nbsp;&nbsp;业&nbsp;&nbsp;信息工程</li>
               </ul>
             </div>
             <div class="right float">
-              <h4>自我评价</h4>
-              <p class="content">好文肯问，性格随和，充满好奇心。</p>
+              <h4 class="heading">自我评价</h4>
+              <p class="content">好学肯问，性格随和，充满好奇心。</p>
             </div>
           </div>
           <div class="nextpage">
@@ -60,38 +63,44 @@
           </div>          
         </section>
         <section id="skills">
+          <h2>技术栈</h2>
           <div>
-            <h2>技术栈</h2>
-            <div>
-              <div class="floatfix card">
-                <h4 class="heading">HTML&CSS</h4>
-                <ul class="content">
-                  <li><div class="fa fa-caret-right floatfix"></div>熟练掌握HTML 标签，能够编写语义合理、结构化的页面文档</li>
-                  <li><div class="fa fa-caret-right floatfix"></div>理解 CSS 盒模型，熟知各种定位方式，能够准确完成从 psd 设计稿到网站页面的重构，实现多样化的网站布局</li>
-                  <li><div class="fa fa-caret-right floatfix"></div>能够利用CSS3实现多种动画效果</li>
-                  <li><div class="fa fa-caret-right floatfix"></div>能够利用Sass编写CSS</li>
-                </ul>
-              </div>
-              <div class="floatfix card">
-                <h4 class="heading">JavaScript</h4>
-                <ul class="content">
-                  <li><div class="fa fa-caret-right floatfix"></div>熟悉原生 JavaScript，能够使用原生 JS 进行DOM操作，发送Ajax请求等</li>
-                  <li><div class="fa fa-caret-right floatfix"></div>能熟练使用jQuery配合js进行网站开发</li>
-                  <li></li>
-                </ul>
-              </div>
-              <div class="floatfix card">
-                <h4 class="heading">其他</h4>
-                <ul class="content">
-                  <li><div class="fa fa-caret-right floatfix"></div>良好的英文能力，能够阅读英文文档，紧跟技术发展潮流</li>
-                  <li><div class="fa fa-caret-right floatfix"></div>使用 Git 进行版本控制</li>
-                </ul>
-              </div>
-            </div>              
-            <div class="nextpage">
+            <div class="floatfix card">
+              <h4 class="heading">HTML&CSS</h4>
+              <ul class="content">
+                <li><div class="fa fa-caret-right floatfix"></div>能够编写符合标准的、语义化的HTML文档</li>
+                <li><div class="fa fa-caret-right floatfix"></div>熟知盒模型和各种定位方式，能够快速实现从psd到网站页面的布局
+                  <ul>
+                    <li><a href="https://theaao.github.io/baidu_ife_tasks/xiaowei_academy/task6/task6_index.html">模拟报纸排版</a></li>
+                    <li><a href="https://theaao.github.io/baidu_ife_tasks/xiaowei_academy/task7/task7.html">常见技术产品官网架构及样式布局</a></li>
+                  </ul>
+                </li>
+                <li><div class="fa fa-caret-right floatfix"></div>利用CSS3实现动画效果</li>
+                <li><div class="fa fa-caret-right floatfix"></div>会用Sass</li>
+              </ul>
+            </div>
+            <div class="floatfix card">
+              <h4 class="heading">JavaScript</h4>
+              <ul class="content">
+                <li><div class="fa fa-caret-right floatfix"></div>熟悉原生 JavaScript，包括DOM操作、ajax请求、闭包等</li>
+                <li><div class="fa fa-caret-right floatfix"></div>能熟练使用jQuery配合js进行网站开发</li>
+                <li><div class="fa fa-caret-right floatfix">对数据结构和算法有一定了解
+                  <ul><li><a href="https://theaao.github.io/baidu_ife_tasks/binbin_academy/task5/task5.html">模拟队列及排序可视化</a></li>
+                  <li><a href="https://theaao.github.io/baidu_ife_tasks/binbin_academy/task7/task7.html">模拟二叉树及遍历过程展示</a></li></ul>
+                </li>
+              </ul>
+            </div>
+            <div class="floatfix card">
+              <h4 class="heading">其他</h4>
+              <ul class="content">
+                <li><div class="fa fa-caret-right floatfix"></div>良好的英文能力，六级570分。能够阅读英文文档，紧跟技术发展潮流</li>
+                <li><div class="fa fa-caret-right floatfix"></div>使用 Git 进行版本控制</li>
+              </ul>
+            </div>
+          </div>
+          <div class="nextpage">
             <span class="fa fa-2x fa-angle-down"></span>
-          </div>
-          </div>
+          </div>               
         </section>
         <section id="projects">
           <div>
@@ -101,7 +110,7 @@
                 <img src="images/random_quote_machine.jpg" alt="随机诗词生成器截图" class="preview">
                 <div class="intro">
                   <h3>随机诗词显示器</h3>
-                  <p>每次打开页面时随机显示一首词，支持分享到facebook、twitter 和微博，诗词切换时动画效果显示。</p>
+                  <p>随机显示诗词，支持分享到facebook、twitter 和微博，动画效果。</p>
                   <div class="tags">
                     <div class="float tag">jQuery</div>
                     <div class="float tag">ajax</div>
@@ -127,7 +136,7 @@
                 <img src="images/snake.jpg" alt="贪食蛇页面截图" class="preview">
                 <div class="intro">
                   <h3>贪食蛇</h3>
-                  <p>一个贪食蛇小游戏，利用HTML5的canvas标签实现。通过键盘控制蛇向四个方向移动，可以暂停游戏。随着分数的增加，蛇运动速度将加快。</p>
+                  <p>经典单机小游戏，有难度增加设置。</p>
                   <div class="tags">
                     <div class="float tag">HTML5</div>
                     <div class="float tag">JavaScript</div>
@@ -139,7 +148,7 @@
                 <img src="images/page_switch.jpg" alt="页面切换插件截图" class="preview">
                 <div class="intro">
                   <h3>页面切换插件</h3>
-                  <p>可以实现页面的平滑切换，可以设置页面切换的方向、是否分页、是否循环切换等。略修改也可实现轮播效果。</p>
+                  <p>实现页面的平滑切换，可输入参数修改默认设置，包括页面切换方向、是否分页、是否首尾循环等。</p>
                   <div class="tags">
                     <div class="float tag">jQuery</div>
                     <div class="float tag">JavaScript</div>
@@ -179,8 +188,11 @@
         <a href="https://github.com/TheaAo" target="_blank"><span class="fa fa-2x fa-github"></span></a>
         <a href="mailto:ao_xinyan@163.com"><span class="fa fa-2x fa-envelope"></span></a>
         <p>More information in <a href="#">Thea Ao</a></p>
-      </footer>   
-      <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.js"></script>
-      <script src="portfolio.js"></script>
+      </footer> 
+      <script>
+        (function(){
+          initPage();
+        })();
+      </script>  
     </body>
 </html>

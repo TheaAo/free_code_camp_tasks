@@ -3,13 +3,13 @@
 * @Author: Thea Ao
 * @Date:   2017-06-12 11:55:59
 * @Last Modified by:   Thea Ao
-* @Last Modified time: 2017-06-12 22:02:01
+* @Last Modified time: 2017-06-14 00:24:52
 */
 /*
 * @Author: Thea Ao
 * @Date:   2017-06-12 13:55:45
 * @Last Modified by:   Thea Ao
-* @Last Modified time: 2017-06-12 18:09:19
+* @Last Modified time: 2017-06-14 00:04:45
 */
 * {
   box-sizing: border-box;
@@ -71,29 +71,25 @@ body .floatfix {
   display: inline-block;
 }
 body .card {
-  width: 300px;
-  margin: 20px;
-  background-color: #de7b54;
   color: #fff;
 }
 body .card .heading {
-  background-color: #599a96;
-  margin: 0;
-  height: 30px;
-  padding: 5px 20px;
+  text-align: center;
 }
 body .card .content {
-  margin: 20px;
   text-align: left;
+}
+body li ul {
+  margin-left: 20px;
 }
 
 /*header 样式*/
 header {
   background-color: #599a96;
+  z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 999;
 }
 header nav {
   width: 100vw;
@@ -119,17 +115,17 @@ header nav li:hover {
 /*各个section样式*/
 main {
   background-color: #eeeeee;
-  margin-top: 40px;
 }
 main section {
   position: relative;
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px 20px;
+  transition: transform 1000ms;
 }
 main section#homepage {
   background-color: #de7b54;
   color: #fff;
-  height: calc(100vh - 40px);
+  height: 100vh;
 }
 main section#homepage div.container {
   position: absolute;
@@ -146,7 +142,13 @@ main section#homepage h1 {
 }
 main section#about-me .card {
   width: 60%;
-  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+main section#about-me .card .heading {
+  margin-top: 0;
 }
 main section#about-me .card div {
   padding: 20px;
@@ -158,17 +160,26 @@ main section#about-me .card .left {
 main section#about-me .card .right {
   background-color: #599a96;
 }
-main section#about-me .card .center {
-  text-align: left;
+main section#skills .card {
+  width: 300px;
+  margin: 20px;
+  background-color: #de7b54;
+  vertical-align: top;
 }
-main section#skills .content li {
+main section#skills .card .heading {
+  background-color: #599a96;
+  margin: 0;
+  height: 30px;
+  padding: 5px 20px;
+}
+main section#skills .card .content {
+  margin: 20px;
+}
+main section#skills .card .content li {
   margin: 10px 0;
 }
-main section#skills .content .fa {
+main section#skills .card .content .fa {
   margin: 0 5px;
-}
-main section#projects {
-  padding: 20px;
 }
 main section#projects .project {
   position: relative;
@@ -176,16 +187,16 @@ main section#projects .project {
 }
 main section#projects .project .preview {
   width: 300px;
-  height: 300px;
+  height: 200px;
 }
 main section#projects .project .intro {
   position: absolute;
   top: 0;
   width: 300px;
-  height: 300px;
+  height: 200px;
   background-color: rgba(89, 154, 150, 0.9);
   color: #fff;
-  padding: 20px;
+  padding: 0 20px;
   display: none;
 }
 main section#projects .project .intro p {
@@ -206,7 +217,7 @@ main section#projects .project:hover .intro {
 }
 main div.nextpage {
   position: absolute;
-  bottom: 10px;
+  bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
   color: fontColor1;
@@ -222,20 +233,14 @@ footer {
 
 /*响应式*/
 @media (min-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+
   .card {
     height: 300px;
   }
 
-  section#about-me, section#skills {
-    height: calc(100vh - 40px);
-  }
-
-  section#about-me .card {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
   section#about-me .card div {
     width: 50%;
     height: 100%;
@@ -244,7 +249,7 @@ footer {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-80%, -50%);
+    transform: translate(-60%, -50%);
   }
 }
 @media (max-width: 767px) {
