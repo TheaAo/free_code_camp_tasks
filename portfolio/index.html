@@ -15,10 +15,10 @@
       <header>
         <nav>
           <ul>
-            <li>主页</li>
-            <li>关于我</li>
-            <li>技术栈</li>
-            <li>作品</li>
+            <li><a href="#homepage">主页</a></li>
+            <li><a href="#about-me">关于我</a></li>
+            <li><a href="#skills">技术栈</a></li>
+            <li><a href="#projects">作品</a></li>
           </ul>
         </nav>
       </header>
@@ -38,7 +38,7 @@
             </ul>
           </div>
           <div class="nextpage">
-            <span class="fa fa-2x fa-angle-down"></span>
+            <a href="#about-me"><span class="fa fa-2x fa-angle-down"></span></a>
           </div>
         </section>
         <section id="about-me">          
@@ -59,7 +59,7 @@
             </div>
           </div>
           <div class="nextpage">
-            <span class="fa fa-2x fa-angle-down"></span>
+            <a href="#skills"><span class="fa fa-2x fa-angle-down"></span></a>
           </div>          
         </section>
         <section id="skills">
@@ -97,10 +97,7 @@
                 <li><div class="fa fa-caret-right floatfix"></div>使用 Git 进行版本控制</li>
               </ul>
             </div>
-          </div>
-          <div class="nextpage">
-            <span class="fa fa-2x fa-angle-down"></span>
-          </div>               
+          </div>            
         </section>
         <section id="projects">
           <div>
@@ -191,7 +188,9 @@
       </footer> 
       <script>
         (function(){
-          initPage();
+          if($('#about-me').height() < $(window).height()){
+            $('#about-me').height($(window).height());
+          }
         })();
       </script>  
     </body>

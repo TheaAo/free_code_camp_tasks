@@ -2,7 +2,7 @@
 * @Author: Thea Ao
 * @Date:   2017-06-12 11:55:59
 * @Last Modified by:   Thea Ao
-* @Last Modified time: 2017-06-14 00:24:52
+* @Last Modified time: 2017-06-14 19:59:42
 */
 @import 'reset';
 
@@ -165,17 +165,16 @@ main {
             margin: 20px 20px 10px;
             
             .preview {
-                @include block(300px,200px);
+                @include block(300px,300px);
             }
 
             .intro {
                 position: absolute;
                 top: 0;
-                @include block(300px,200px);
+                @include block(300px,300px);
                 background-color: rgba(89,154,150,0.9);
                 color: $fontColor1;
                 padding: 0 20px;
-                display: none;
 
                 p {
                     text-align: left;
@@ -197,11 +196,6 @@ main {
                 
             }
         }
-        .project:hover {
-            .intro {
-                display: block;
-            }
-        }
     }
 
     div.nextpage {
@@ -209,7 +203,6 @@ main {
         bottom: 40px;
         left: 50%;
         transform: translateX(-50%);
-        color: fontColor1;
     }
 }
 
@@ -224,7 +217,7 @@ footer {
 /*响应式*/
 @media (min-width: 768px) {
     body {
-        overflow: hidden;
+        //overflow: hidden;
     }
     .card {
         height: 300px;
@@ -241,6 +234,16 @@ footer {
             }
         }
     }
+    section#projects {
+        .intro {
+            display: none;
+        }
+        .project:hover {
+            .intro {
+                display: block;
+            }
+        }
+    }
 }
 
 @media (max-width: 767px) {
@@ -249,6 +252,11 @@ footer {
             div {
                 width: 100%;
             }
+        }
+    }
+    section#projects{
+        .intro{
+            display: block;
         }
     }
 }

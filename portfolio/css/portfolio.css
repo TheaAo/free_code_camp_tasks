@@ -3,7 +3,7 @@
 * @Author: Thea Ao
 * @Date:   2017-06-12 11:55:59
 * @Last Modified by:   Thea Ao
-* @Last Modified time: 2017-06-14 00:24:52
+* @Last Modified time: 2017-06-14 19:59:42
 */
 /*
 * @Author: Thea Ao
@@ -187,17 +187,16 @@ main section#projects .project {
 }
 main section#projects .project .preview {
   width: 300px;
-  height: 200px;
+  height: 300px;
 }
 main section#projects .project .intro {
   position: absolute;
   top: 0;
   width: 300px;
-  height: 200px;
+  height: 300px;
   background-color: rgba(89, 154, 150, 0.9);
   color: #fff;
   padding: 0 20px;
-  display: none;
 }
 main section#projects .project .intro p {
   text-align: left;
@@ -212,15 +211,11 @@ main section#projects .project .intro .tag {
 main section#projects .project .panel a {
   color: #599a96;
 }
-main section#projects .project:hover .intro {
-  display: block;
-}
 main div.nextpage {
   position: absolute;
   bottom: 40px;
   left: 50%;
   transform: translateX(-50%);
-  color: fontColor1;
 }
 
 /*footer 样式*/
@@ -233,10 +228,6 @@ footer {
 
 /*响应式*/
 @media (min-width: 768px) {
-  body {
-    overflow: hidden;
-  }
-
   .card {
     height: 300px;
   }
@@ -251,10 +242,21 @@ footer {
     left: 50%;
     transform: translate(-60%, -50%);
   }
+
+  section#projects .intro {
+    display: none;
+  }
+  section#projects .project:hover .intro {
+    display: block;
+  }
 }
 @media (max-width: 767px) {
   section#about-me .card div {
     width: 100%;
+  }
+
+  section#projects .intro {
+    display: block;
   }
 }
 

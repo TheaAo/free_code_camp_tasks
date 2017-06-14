@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2017-03-20 14:49:53
 * @Last Modified by:   Thea Ao
-* @Last Modified time: 2017-06-14 00:14:24
+* @Last Modified time: 2017-06-14 19:43:37
 */
 
 function initPage(){
@@ -66,16 +66,6 @@ function initPage(){
     $('main').on('transitionend',end);
     $('.nextpage').on('click',nextPage);
 
-    /*调整section页面高度*/
-    function resize(){
-        var viewportHeight = $(window).height();
-        $('section').each(function(){
-            var me = $(this);
-            if (me.innerHeight() < viewportHeight) {
-                me.innerHeight(viewportHeight);
-            }
-        });
-    }
     function prevPage() {
         if (index > 0) {
             index--;
@@ -97,3 +87,13 @@ function initPage(){
     }
 }
 
+/*调整section页面高度*/
+function resize(){
+    var viewportHeight = $(window).height();
+    $('section').each(function(){
+        var me = $(this);
+        if (me.innerHeight() < viewportHeight) {
+            me.innerHeight(viewportHeight);
+        }
+    });
+}
